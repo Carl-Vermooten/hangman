@@ -61,7 +61,7 @@ let U = {
         let the_word_element = U.$("the-word");
         // the_word_element.innerHTML = "Loading...";
 
-        ajax.open('GET', 'https://raw.githubusercontent.com/Carl-Vermooten/hangman/main/data/data.json');
+        ajax.open('GET', './data/data.json');
 
         ajax.onload = function () {
             if (ajax.status == 200) {
